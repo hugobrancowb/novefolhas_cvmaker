@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  width: 208mm; }
+
+page[size="A4"] {
+  width: 208mm; }
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+    width: 208mm; } }
+
+body {
+  background-color: #505050; }
+
+page {
+  background: #ffffff;
+  color: #000000; }
+  page #costela {
+    padding: 12.7mm;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    /**************************/ }
+    page #costela h2 {
+      font-family: 'Pompiere', cursive;
+      font-size: 24pt;
+      font-weight: 400; }
+    page #costela .soft-title {
+      font-size: 12pt;
+      font-weight: 600; }
+    page #costela .corpo, page #costela a, page #costela a:visited, page #costela a:hover {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 12pt; }
+    page #costela a, page #costela a:visited, page #costela a:hover {
+      font-style: oblique;
+      color: #000000;
+      text-decoration: none; }
+    page #costela p.nome {
+      font-family: 'Sue Ellen Francisco', cursive;
+      font-size: 48pt;
+      font-weight: 400;
+      margin-bottom: 20px; }
+    page #costela div.secao h2 {
+      margin-top: 25px;
+      margin-bottom: 10px; }
+    page #costela div.secao .cell {
+      margin-bottom: 10px; }
+    page #costela #cabecalho {
+      margin-bottom: 20px; }
+      page #costela #cabecalho .site, page #costela #cabecalho .site:visited, page #costela #cabecalho .site:hover,
+      page #costela #cabecalho a, page #costela #cabecalho a:visited, page #costela #cabecalho a:hover,
+      page #costela #cabecalho .endereco,
+      page #costela #cabecalho .telefone,
+      page #costela #cabecalho .email {
+        display: block;
+        line-height: 16pt;
+        margin-top: 3px; }

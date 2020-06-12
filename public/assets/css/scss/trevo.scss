@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  width: 208mm;
+  //height: 295mm;
+}
+
+page[size="A4"] {  
+  width: 208mm;
+  //height: 295mm;
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+    width: 208mm;
+    //height: 295mm;
+  }
+}
+
+body {
+  background-color: #505050;
+}
+
+page {
+  background: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  color: #000;
+
+  h2 {
+    color: rgb(21,33,105);
+    font-size: 14pt;
+    line-height: 16pt;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .soft-title {
+    font-size: 12pt;
+    line-height: 16pt;
+    font-weight: 500;
+    font-style: oblique;
+  }
+  
+  .corpo {
+    font-size: 12pt;
+    line-height: 16pt;
+    font-weight: 400;
+  }
+
+  a, a:visited, a:hover {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #trevo{
+    //padding: 12.7mm; //dev only
+
+    div.secao {
+      h2 {
+        margin-top: 25px;
+        margin-bottom: 5px;
+      }
+
+      .cell {
+        margin-bottom: 10px;
+        .duracao {
+          font-size: 11pt;
+          line-height: 16pt;
+          font-weight: 300;
+          text-transform: uppercase;
+          font-style: oblique;
+        }
+        
+        .link,.link:visited ,.link:hover {
+          font-size: 10pt;
+          line-height: 16pt;
+          font-weight: 300;
+          font-style: oblique;
+        }
+      }
+    }
+    
+    #cabecalho {
+      border-left: solid 1.5mm rgb(21,33,105); // linha decorativadecorativa
+      padding-left: 4mm;
+      margin-bottom: 40px;
+      
+      .nome {
+        color: rgb(21,33,105);
+        font-size: 28pt;
+        font-weight: 700;
+      }
+      
+      .endereco,
+      .site, .site:visited, .site:hover,
+      .email,
+      .telefone {
+        display: block;
+        font-size: 12pt;
+        line-height: 16pt;
+        margin-top: 5px;
+        font-weight: 400;
+      }
+    }
+  }
+}

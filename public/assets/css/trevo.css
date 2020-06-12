@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  width: 208mm; }
+
+page[size="A4"] {
+  width: 208mm; }
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+    width: 208mm; } }
+
+body {
+  background-color: #505050; }
+
+page {
+  background: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  color: #000; }
+  page h2 {
+    color: #152169;
+    font-size: 14pt;
+    line-height: 16pt;
+    font-weight: 600;
+    text-transform: uppercase; }
+  page .soft-title {
+    font-size: 12pt;
+    line-height: 16pt;
+    font-weight: 500;
+    font-style: oblique; }
+  page .corpo {
+    font-size: 12pt;
+    line-height: 16pt;
+    font-weight: 400; }
+  page a, page a:visited, page a:hover {
+    text-decoration: none;
+    color: #000; }
+  page #trevo div.secao h2 {
+    margin-top: 25px;
+    margin-bottom: 5px; }
+  page #trevo div.secao .cell {
+    margin-bottom: 10px; }
+    page #trevo div.secao .cell .duracao {
+      font-size: 11pt;
+      line-height: 16pt;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-style: oblique; }
+    page #trevo div.secao .cell .link, page #trevo div.secao .cell .link:visited, page #trevo div.secao .cell .link:hover {
+      font-size: 10pt;
+      line-height: 16pt;
+      font-weight: 300;
+      font-style: oblique; }
+  page #trevo #cabecalho {
+    border-left: solid 1.5mm #152169;
+    padding-left: 4mm;
+    margin-bottom: 40px; }
+    page #trevo #cabecalho .nome {
+      color: #152169;
+      font-size: 28pt;
+      font-weight: 700; }
+    page #trevo #cabecalho .endereco,
+    page #trevo #cabecalho .site, page #trevo #cabecalho .site:visited, page #trevo #cabecalho .site:hover,
+    page #trevo #cabecalho .email,
+    page #trevo #cabecalho .telefone {
+      display: block;
+      font-size: 12pt;
+      line-height: 16pt;
+      margin-top: 5px;
+      font-weight: 400; }

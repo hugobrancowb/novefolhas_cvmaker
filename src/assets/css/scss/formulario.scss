@@ -1,0 +1,343 @@
+$btn-cor: #6c757d;
+$primaria: #6AC33B;
+$primaria-hover: #5BA732; /* usado em hover */
+
+body {
+  background-color: #fff;
+  // se o css puder ser carregado apenas nessa pagina, seria interessante por f7 como bgcolor do header
+}
+
+section#faleconosco_form {
+  .card {
+    > p {
+      margin: 0;
+    }
+  }
+}
+
+.formulario {
+  padding-top: 110px;
+  padding-bottom: 30px;
+  
+  @media (min-width : 1200px) {
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
+
+  div.btn-wrapper {
+    display: flex;
+    margin: 20px auto;
+
+    button.btn {
+      margin: auto;
+    }
+
+    .btn-bgcolor {
+      color: #fff;
+      background-color: $btn-cor;
+    }
+
+    .btn-submit {
+      font-size: 22px;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+
+
+  .row {
+    > div.card { /* .col */
+      margin: auto;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+      padding: 30px;
+      background-color: #f7f7f7;
+      border-radius: 3px;
+
+      @media (max-width: 575px) {
+        background-color: rgba(255,255,255,0);
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+      }
+
+
+      h2 {
+        font-family: "Montserrat", sans-serif;
+        color: #333333;
+        margin-bottom: 40px;
+        font-size: 48px;
+        font-weight: 700;
+        
+        span {
+          color: #6AC33B;
+        }
+      }
+    
+      form {
+        label {
+          //font-size: 18px;
+          color: #777;
+        }
+
+        
+        .input-group, textarea, .grau, .educacao_titulo {
+          margin-bottom: 25px;
+          /*
+          &:last-child {
+            margin-bottom: 0;
+          }
+          */
+
+          input {
+            &::placeholder {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .grau > .input-group {
+          flex-flow: row;
+          
+          .custom-select {
+            min-width: 40%;
+          }
+
+          input {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            border-left: 0;
+          }
+        }
+
+        div.duracao-experiencia, div.duracao-educacao {
+          span {
+            background: none;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            color: #333!important;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.04);
+          }
+          
+          span.meio {
+            border-radius: 0;
+            border-left: none;
+          }
+        }
+
+        div.half {
+          @media (min-width : 768px) {
+            max-width: 50%;
+          }
+        }
+
+        div.half_com_checkbox {
+          @media (min-width : 768px) {
+            display: flex;
+
+            > div:nth-child(1), .pretty { flex: 1 }
+
+            .pretty {
+              margin-left: 25px;
+              margin-top: 14px;
+            }
+          }
+          @media (max-width : 767px) {
+            .pretty {
+              margin-top: 0;
+            }
+          }
+
+          button.atual {
+            opacity: 0.5;
+            cursor: default;
+            &:hover {
+              background: none;
+              color: #6c757d;
+            }
+          }
+        }
+
+        div.duracao-evento,
+        div.duracao-educacao,
+        div.duracao-experiencia_academica,
+        div.duracao-experiencia_profissional {
+
+          button.calendar-button {
+            border: 1px solid #ced4da;
+          }
+
+          div.react-calendar {
+            border: none;
+            overflow: hidden;
+            box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+            
+            max-height: 1000px;
+            margin-bottom: 25px;
+            transition: max-height .5s ease;
+            -moz-transition: max-height .5s ease;
+
+            .react-calendar__year-view .react-calendar__tile, .react-calendar__decade-view .react-calendar__tile, .react-calendar__century-view .react-calendar__tile {
+              padding: 1em 0.5em;
+            }
+
+            .react-calendar__tile--active {
+              background: $primaria;
+              &:hover {
+                background: $primaria-hover;
+              }
+            }
+
+            &.hide {
+              margin-bottom: 0px;
+              max-height: 0px;
+  
+              transition: max-height .5s ease;
+              -moz-transition: max-height .5s ease;
+            }
+          }          
+        }
+
+        select, input, textarea {
+          color: #333!important;
+          box-shadow: 0 2px 2px rgba(0,0,0,0.04);
+        }
+
+        select {
+          height: 42px;
+        }
+
+        input, textarea {
+          padding: 20px 15px;
+        }
+
+        .divisao-area {
+          border-top: solid 1px #eee;
+          padding-bottom: 50px;
+          padding-top: 50px;
+
+
+          .titulo-wrapper {
+            margin-bottom: 25px;
+
+            img {
+              position: absolute;
+              width: 30px;
+            }
+            h3 {
+              color: #333333;
+              margin-left: 40px;
+            }
+            p {
+              color: #666;   
+              font-size: 14px;           
+            }
+          }
+          
+          &:first-child {
+            border-top: none;
+            padding-top: 0px;
+          }
+
+          .experiencia, .projeto {
+            margin-top: 40px;            
+          }
+
+          .pretty { /* pretty checkbox */
+            white-space: inherit;
+            margin-top: 20px;
+            &:first-child {
+              margin-top: 0px;
+              margin-right: 0;
+              label {
+                color:#333333;
+              }
+            }
+
+            .state {
+              label {
+                text-indent: 0;
+                padding-left: 2rem;
+                line-height: 22px;
+
+                &:before, &:after {
+                  top: 0;
+                }
+              }
+            }
+          }
+          label#termos {
+            display: inline;
+            margin-left: 6px;
+            color:#333333;
+          }
+        }
+
+        .btn-nav-wrapper {
+          display: flex;
+          justify-content: center;
+
+          button {
+            margin-left: 10px;
+            margin-right: 10px;
+            font-weight: 600;
+            background-color: $primaria;
+            color: #fff;
+
+            &:hover {
+              background-color: $primaria-hover;
+            }
+
+            &.desativado {
+              background-color: rgba($color: #000000, $alpha: 0.2);
+              cursor: not-allowed;
+              
+              &:hover {
+                background-color: rgba($color: #000000, $alpha: 0.4);
+              }
+            }
+          }
+        }
+      }
+
+      div#EscolherTema {
+        div.info-col {
+          padding-top: 15px;
+          padding-bottom: 15px;
+
+          img {
+            box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.2);
+            border: 1px solid rgba(0,0,0,0.1);
+            transition-duration: .5s;
+            -moz-transition-duration: .5s;
+            position: relative;
+            top: 0px;
+            
+            &:hover {
+              cursor: pointer;
+              box-shadow: 0px 4px 10px 0 rgba(68, 57, 57, 0.2);
+              top: -5px;
+            }
+          }
+          div.info {
+            display: flex;
+            flex-flow: column;
+            
+            h3 {
+              text-align: center;
+              margin: auto;
+              margin-top: 20px;
+              font-weight: 600;
+              color: #333333;
+            }
+      
+            div.btn-wrapper {
+              button {
+                margin: auto 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

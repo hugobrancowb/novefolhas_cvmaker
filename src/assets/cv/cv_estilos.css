@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* Trevo */
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("FiraSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("FiraSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: oblique; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url("FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+/* Costela-de-Adão */
+@font-face {
+  font-family: 'Sue Ellen Francisco';
+  src: url("SueEllenFrancisco-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Pompiere';
+  src: url("Pompiere-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url("SourceSansPro-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: oblique; }
+
+/* Palmeira */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url("RobotoSlab-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("RobotoCondensed-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("RobotoCondensed-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: oblique; }
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url("RobotoCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: oblique; }
+
+/************/
+page, page * {
+  margin: 0;
+  padding: 0; }
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  width: 208mm; }
+
+page[size="A4"] {
+  width: 208mm; }
+
+@media print {
+  page {
+    margin: 0;
+    box-shadow: 0;
+    width: 208mm; } }
+
+page {
+  background: #fff;
+  color: #000;
+  /***************/
+  /* Tema: Trevo */
+  /******************/
+  /* Tema: Palmeira */
+  /************************/
+  /* Tema: Costela-de-Adão */ }
+  page #trevo {
+    padding: 12.7mm;
+    font-family: 'Fira Sans', sans-serif; }
+    page #trevo h2 {
+      color: #152169;
+      font-size: 14pt;
+      line-height: 16pt;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 600;
+      text-transform: uppercase; }
+    page #trevo .soft-title {
+      font-size: 12pt;
+      line-height: 16pt;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 500; }
+    page #trevo .corpo {
+      font-size: 12pt;
+      line-height: 16pt;
+      font-family: 'Fira Sans', sans-serif;
+      font-weight: 400; }
+    page #trevo a, page #trevo a:visited, page #trevo a:hover {
+      text-decoration: none;
+      color: #000; }
+    page #trevo div.secao h2 {
+      margin-top: 25px;
+      margin-bottom: 5px; }
+    page #trevo div.secao .cell {
+      margin-bottom: 10px; }
+      page #trevo div.secao .cell .duracao {
+        font-size: 11pt;
+        line-height: 16pt;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-style: oblique; }
+      page #trevo div.secao .cell .link, page #trevo div.secao .cell .link:visited, page #trevo div.secao .cell .link:hover {
+        font-size: 10pt;
+        line-height: 16pt;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
+        font-style: oblique; }
+    page #trevo #cabecalho {
+      border-left: solid 1.5mm #152169;
+      padding-left: 4mm;
+      margin-bottom: 40px; }
+      page #trevo #cabecalho .nome {
+        color: #152169;
+        font-size: 28pt;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 700; }
+      page #trevo #cabecalho .endereco,
+      page #trevo #cabecalho .site, page #trevo #cabecalho .site:visited, page #trevo #cabecalho .site:hover,
+      page #trevo #cabecalho .email,
+      page #trevo #cabecalho .telefone {
+        display: block;
+        font-size: 12pt;
+        line-height: 16pt;
+        margin-top: 5px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400; }
+  page #palmeira {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12pt; }
+    page #palmeira .soft-title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 12pt; }
+    page #palmeira .corpo, page #palmeira a, page #palmeira a:visited, page #palmeira a:hover {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 12pt; }
+    page #palmeira a, page #palmeira a:visited, page #palmeira a:hover {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      font-style: oblique;
+      color: #000000;
+      text-decoration: none; }
+    page #palmeira div.secao h2 {
+      display: inline-block;
+      padding: 0 6px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      background-color: #333333;
+      color: #ffffff;
+      font-family: 'Roboto Slab', serif;
+      font-size: 16pt;
+      font-weight: 400; }
+    page #palmeira div.secao .cell {
+      margin-bottom: 10px; }
+    page #palmeira #cabecalho {
+      padding: 12.7mm;
+      background-color: #333333;
+      border-top: solid 3px #ffffff; }
+      page #palmeira #cabecalho p.nome {
+        font-family: 'Roboto Slab', serif;
+        font-size: 28pt;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #ffffff; }
+      page #palmeira #cabecalho .site, page #palmeira #cabecalho .site:visited, page #palmeira #cabecalho .site:hover,
+      page #palmeira #cabecalho a, page #palmeira #cabecalho a:visited, page #palmeira #cabecalho a:hover,
+      page #palmeira #cabecalho .endereco,
+      page #palmeira #cabecalho .telefone,
+      page #palmeira #cabecalho .email {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        display: block;
+        line-height: 16pt;
+        margin-top: 3px;
+        color: #ffffff; }
+    page #palmeira div.secao {
+      padding: 0 12.7mm; }
+      page #palmeira div.secao:last-child {
+        padding-bottom: 12.7mm; }
+      page #palmeira div.secao .duracao {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300; }
+  page #costela {
+    padding: 12.7mm;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 12pt; }
+    page #costela h2 {
+      font-family: 'Pompiere', cursive;
+      font-weight: 400;
+      font-size: 24pt; }
+    page #costela .soft-title {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 600;
+      font-size: 12pt; }
+    page #costela .corpo, page #costela a, page #costela a:visited, page #costela a:hover {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 12pt; }
+    page #costela a, page #costela a:visited, page #costela a:hover {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: oblique;
+      color: #000000;
+      text-decoration: none; }
+    page #costela p.nome {
+      font-family: 'Sue Ellen Francisco', cursive;
+      font-weight: 400;
+      font-size: 48pt;
+      margin-bottom: 20px; }
+    page #costela div.secao h2 {
+      margin-top: 25px;
+      margin-bottom: 10px; }
+    page #costela div.secao .cell {
+      margin-bottom: 10px; }
+    page #costela #cabecalho {
+      margin-bottom: 20px; }
+      page #costela #cabecalho .site, page #costela #cabecalho .site:visited, page #costela #cabecalho .site:hover,
+      page #costela #cabecalho a, page #costela #cabecalho a:visited, page #costela #cabecalho a:hover,
+      page #costela #cabecalho .endereco,
+      page #costela #cabecalho .telefone,
+      page #costela #cabecalho .email {
+        display: block;
+        line-height: 16pt;
+        margin-top: 3px; }

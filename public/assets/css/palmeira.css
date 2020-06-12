@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  width: 208mm; }
+
+page[size="A4"] {
+  width: 208mm; }
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+    width: 208mm; } }
+
+body {
+  background-color: #505050; }
+
+page {
+  background: #ffffff;
+  color: #000000; }
+  page #palmeira {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    /**************************/ }
+    page #palmeira .soft-title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 12pt; }
+    page #palmeira .corpo, page #palmeira a, page #palmeira a:visited, page #palmeira a:hover {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 12pt; }
+    page #palmeira a, page #palmeira a:visited, page #palmeira a:hover {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 300;
+      font-style: oblique;
+      color: #000000;
+      text-decoration: none; }
+    page #palmeira div.secao h2 {
+      display: inline-block;
+      padding: 0 6px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      background-color: #333333;
+      color: #ffffff;
+      font-family: 'Roboto Slab', serif;
+      font-size: 16pt;
+      font-weight: 400; }
+    page #palmeira div.secao .cell {
+      margin-bottom: 10px; }
+    page #palmeira #cabecalho {
+      padding: 12.7mm;
+      background-color: #333333;
+      border-top: solid 3px #ffffff; }
+      page #palmeira #cabecalho p.nome {
+        font-family: 'Roboto Slab', serif;
+        font-size: 28pt;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: #ffffff; }
+      page #palmeira #cabecalho .site, page #palmeira #cabecalho .site:visited, page #palmeira #cabecalho .site:hover,
+      page #palmeira #cabecalho a, page #palmeira #cabecalho a:visited, page #palmeira #cabecalho a:hover,
+      page #palmeira #cabecalho .endereco,
+      page #palmeira #cabecalho .telefone,
+      page #palmeira #cabecalho .email {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300;
+        display: block;
+        line-height: 16pt;
+        margin-top: 3px;
+        color: #ffffff; }
+    page #palmeira div.secao {
+      padding: 0 12.7mm; }
+      page #palmeira div.secao:last-child {
+        padding-bottom: 12.7mm; }
+      page #palmeira div.secao .duracao {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 300; }

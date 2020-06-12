@@ -1,0 +1,60 @@
+{
+  "version": "0.8.1",
+  "name": "novefolhas",
+  "private": true,
+  "dependencies": {
+    "@react-pdf/renderer": "^1.6.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bcrypt": "^4.0.1",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "html2canvas": "^1.0.0-rc.5",
+    "html2pdf": "0.0.11",
+    "inline-css": "^2.6.3",
+    "jspdf": "^1.5.3",
+    "mysql": "^2.18.1",
+    "pretty-checkbox": "^3.0.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-calendar": "^3.0.1",
+    "react-dom": "^16.13.1",
+    "react-ga": "^2.7.0",
+    "react-helmet": "^6.0.0",
+    "react-pdf": "^4.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "routes": "^2.1.0",
+    "uuid": "^7.0.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devstart": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass public/assets/css/scss/ -o public/assets/css/ && node-sass src/assets/css/scss/ -o src/assets/css/ && node-sass src/assets/cv/ -o src/assets/cv/",
+    "watch-css": "nodemon -e scss -x npm run build-css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

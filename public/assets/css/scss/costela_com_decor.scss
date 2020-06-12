@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  width: 208mm;
+  //height: 295mm;
+}
+
+page[size="A4"] {  
+  width: 208mm;
+  //height: 295mm;
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+    width: 208mm;
+    //height: 295mm;
+  }
+}
+
+body {
+  background-color: #505050;
+}
+
+page {
+  background: #ffffff;
+  color: #000000;
+  
+  #costela {    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+    
+    h2 {
+      font-family: 'Pompiere', cursive;
+      font-size: 24pt;
+      font-weight: 400;
+    }
+    
+    .soft-title {
+      font-size: 12pt;
+      font-weight: 600;
+      color: #423F3D;
+    }
+    
+    .corpo, a, a:visited, a:hover {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 300;
+      font-size: 12pt;
+    }
+    
+    a, a:visited, a:hover {
+      font-style: oblique;
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    p.nome {
+      font-family: 'Sue Ellen Francisco', cursive;
+      font-size: 48pt;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    
+    /**************************/
+    div.secao {
+      h2 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        background-color: #E8F2D2;
+        border-bottom: 1px solid #BFC1B1;
+        border-top: 1px solid #BFC1B1;
+        color: #423F3D;
+      }
+      
+      .cell {
+        margin-bottom: 10px;
+      }
+    }
+    
+    #cabecalho {
+      padding: 12.7mm;
+      background-color: #E8F2D2;
+      border-top: solid 3px #ffffff;
+      border-bottom: 1px solid #BFC1B1;
+      color: #575250;
+      padding-bottom: 20px;
+      
+      .site, .site:visited, .site:hover,
+      a, a:visited, a:hover,
+      .endereco,
+      .telefone,
+      .email {
+        display: block;
+        line-height: 16pt;
+        margin-top: 3px;
+        color: #575250;
+      }
+    }
+
+    div.secao {
+      padding: 0 12.7mm;
+      &:last-child {
+        padding-bottom: 12.7mm;
+      }
+    }
+  }
+}

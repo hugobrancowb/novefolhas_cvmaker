@@ -1,0 +1,227 @@
+/* usado em hover */
+body {
+  background-color: #fff; }
+
+section#faleconosco_form .card > p {
+  margin: 0; }
+
+.formulario {
+  padding-top: 110px;
+  padding-bottom: 30px; }
+  @media (min-width: 1200px) {
+    .formulario {
+      padding-top: 120px;
+      padding-bottom: 30px; } }
+  .formulario div.btn-wrapper {
+    display: flex;
+    margin: 20px auto; }
+    .formulario div.btn-wrapper button.btn {
+      margin: auto; }
+    .formulario div.btn-wrapper .btn-bgcolor {
+      color: #fff;
+      background-color: #6c757d; }
+    .formulario div.btn-wrapper .btn-submit {
+      font-size: 22px;
+      color: #fff;
+      font-weight: 600; }
+  .formulario .row > div.card {
+    /* .col */
+    margin: auto;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    background-color: #f7f7f7;
+    border-radius: 3px; }
+    @media (max-width: 575px) {
+      .formulario .row > div.card {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        border: none;
+        border-radius: 0; } }
+    .formulario .row > div.card h2 {
+      font-family: "Montserrat", sans-serif;
+      color: #333333;
+      margin-bottom: 40px;
+      font-size: 48px;
+      font-weight: 700; }
+      .formulario .row > div.card h2 span {
+        color: #6AC33B; }
+    .formulario .row > div.card form label {
+      color: #777; }
+    .formulario .row > div.card form .input-group, .formulario .row > div.card form textarea, .formulario .row > div.card form .grau, .formulario .row > div.card form .educacao_titulo {
+      margin-bottom: 25px;
+      /*
+          &:last-child {
+            margin-bottom: 0;
+          }
+          */ }
+      .formulario .row > div.card form .input-group input::placeholder, .formulario .row > div.card form textarea input::placeholder, .formulario .row > div.card form .grau input::placeholder, .formulario .row > div.card form .educacao_titulo input::placeholder {
+        font-size: 14px; }
+    .formulario .row > div.card form .grau > .input-group {
+      flex-flow: row; }
+      .formulario .row > div.card form .grau > .input-group .custom-select {
+        min-width: 40%; }
+      .formulario .row > div.card form .grau > .input-group input {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: 0; }
+    .formulario .row > div.card form div.duracao-experiencia span, .formulario .row > div.card form div.duracao-educacao span {
+      background: none;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      color: #333 !important;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.04); }
+    .formulario .row > div.card form div.duracao-experiencia span.meio, .formulario .row > div.card form div.duracao-educacao span.meio {
+      border-radius: 0;
+      border-left: none; }
+    @media (min-width: 768px) {
+      .formulario .row > div.card form div.half {
+        max-width: 50%; } }
+    @media (min-width: 768px) {
+      .formulario .row > div.card form div.half_com_checkbox {
+        display: flex; }
+        .formulario .row > div.card form div.half_com_checkbox > div:nth-child(1), .formulario .row > div.card form div.half_com_checkbox .pretty {
+          flex: 1; }
+        .formulario .row > div.card form div.half_com_checkbox .pretty {
+          margin-left: 25px;
+          margin-top: 14px; } }
+    @media (max-width: 767px) {
+      .formulario .row > div.card form div.half_com_checkbox .pretty {
+        margin-top: 0; } }
+    .formulario .row > div.card form div.half_com_checkbox button.atual {
+      opacity: 0.5;
+      cursor: default; }
+      .formulario .row > div.card form div.half_com_checkbox button.atual:hover {
+        background: none;
+        color: #6c757d; }
+    .formulario .row > div.card form div.duracao-evento button.calendar-button,
+    .formulario .row > div.card form div.duracao-educacao button.calendar-button,
+    .formulario .row > div.card form div.duracao-experiencia_academica button.calendar-button,
+    .formulario .row > div.card form div.duracao-experiencia_profissional button.calendar-button {
+      border: 1px solid #ced4da; }
+    .formulario .row > div.card form div.duracao-evento div.react-calendar,
+    .formulario .row > div.card form div.duracao-educacao div.react-calendar,
+    .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar,
+    .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar {
+      border: none;
+      overflow: hidden;
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+      max-height: 1000px;
+      margin-bottom: 25px;
+      transition: max-height .5s ease;
+      -moz-transition: max-height .5s ease; }
+      .formulario .row > div.card form div.duracao-evento div.react-calendar .react-calendar__year-view .react-calendar__tile, .formulario .row > div.card form div.duracao-evento div.react-calendar .react-calendar__decade-view .react-calendar__tile, .formulario .row > div.card form div.duracao-evento div.react-calendar .react-calendar__century-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-educacao div.react-calendar .react-calendar__year-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-educacao div.react-calendar .react-calendar__decade-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-educacao div.react-calendar .react-calendar__century-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar .react-calendar__year-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar .react-calendar__decade-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar .react-calendar__century-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar .react-calendar__year-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar .react-calendar__decade-view .react-calendar__tile,
+      .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar .react-calendar__century-view .react-calendar__tile {
+        padding: 1em 0.5em; }
+      .formulario .row > div.card form div.duracao-evento div.react-calendar .react-calendar__tile--active,
+      .formulario .row > div.card form div.duracao-educacao div.react-calendar .react-calendar__tile--active,
+      .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar .react-calendar__tile--active,
+      .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar .react-calendar__tile--active {
+        background: #6AC33B; }
+        .formulario .row > div.card form div.duracao-evento div.react-calendar .react-calendar__tile--active:hover,
+        .formulario .row > div.card form div.duracao-educacao div.react-calendar .react-calendar__tile--active:hover,
+        .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar .react-calendar__tile--active:hover,
+        .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar .react-calendar__tile--active:hover {
+          background: #5BA732; }
+      .formulario .row > div.card form div.duracao-evento div.react-calendar.hide,
+      .formulario .row > div.card form div.duracao-educacao div.react-calendar.hide,
+      .formulario .row > div.card form div.duracao-experiencia_academica div.react-calendar.hide,
+      .formulario .row > div.card form div.duracao-experiencia_profissional div.react-calendar.hide {
+        margin-bottom: 0px;
+        max-height: 0px;
+        transition: max-height .5s ease;
+        -moz-transition: max-height .5s ease; }
+    .formulario .row > div.card form select, .formulario .row > div.card form input, .formulario .row > div.card form textarea {
+      color: #333 !important;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.04); }
+    .formulario .row > div.card form select {
+      height: 42px; }
+    .formulario .row > div.card form input, .formulario .row > div.card form textarea {
+      padding: 20px 15px; }
+    .formulario .row > div.card form .divisao-area {
+      border-top: solid 1px #eee;
+      padding-bottom: 50px;
+      padding-top: 50px; }
+      .formulario .row > div.card form .divisao-area .titulo-wrapper {
+        margin-bottom: 25px; }
+        .formulario .row > div.card form .divisao-area .titulo-wrapper img {
+          position: absolute;
+          width: 30px; }
+        .formulario .row > div.card form .divisao-area .titulo-wrapper h3 {
+          color: #333333;
+          margin-left: 40px; }
+        .formulario .row > div.card form .divisao-area .titulo-wrapper p {
+          color: #666;
+          font-size: 14px; }
+      .formulario .row > div.card form .divisao-area:first-child {
+        border-top: none;
+        padding-top: 0px; }
+      .formulario .row > div.card form .divisao-area .experiencia, .formulario .row > div.card form .divisao-area .projeto {
+        margin-top: 40px; }
+      .formulario .row > div.card form .divisao-area .pretty {
+        /* pretty checkbox */
+        white-space: inherit;
+        margin-top: 20px; }
+        .formulario .row > div.card form .divisao-area .pretty:first-child {
+          margin-top: 0px;
+          margin-right: 0; }
+          .formulario .row > div.card form .divisao-area .pretty:first-child label {
+            color: #333333; }
+        .formulario .row > div.card form .divisao-area .pretty .state label {
+          text-indent: 0;
+          padding-left: 2rem;
+          line-height: 22px; }
+          .formulario .row > div.card form .divisao-area .pretty .state label:before, .formulario .row > div.card form .divisao-area .pretty .state label:after {
+            top: 0; }
+      .formulario .row > div.card form .divisao-area label#termos {
+        display: inline;
+        margin-left: 6px;
+        color: #333333; }
+    .formulario .row > div.card form .btn-nav-wrapper {
+      display: flex;
+      justify-content: center; }
+      .formulario .row > div.card form .btn-nav-wrapper button {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 600;
+        background-color: #6AC33B;
+        color: #fff; }
+        .formulario .row > div.card form .btn-nav-wrapper button:hover {
+          background-color: #5BA732; }
+        .formulario .row > div.card form .btn-nav-wrapper button.desativado {
+          background-color: rgba(0, 0, 0, 0.2);
+          cursor: not-allowed; }
+          .formulario .row > div.card form .btn-nav-wrapper button.desativado:hover {
+            background-color: rgba(0, 0, 0, 0.4); }
+    .formulario .row > div.card div#EscolherTema div.info-col {
+      padding-top: 15px;
+      padding-bottom: 15px; }
+      .formulario .row > div.card div#EscolherTema div.info-col img {
+        box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transition-duration: .5s;
+        -moz-transition-duration: .5s;
+        position: relative;
+        top: 0px; }
+        .formulario .row > div.card div#EscolherTema div.info-col img:hover {
+          cursor: pointer;
+          box-shadow: 0px 4px 10px 0 rgba(68, 57, 57, 0.2);
+          top: -5px; }
+      .formulario .row > div.card div#EscolherTema div.info-col div.info {
+        display: flex;
+        flex-flow: column; }
+        .formulario .row > div.card div#EscolherTema div.info-col div.info h3 {
+          text-align: center;
+          margin: auto;
+          margin-top: 20px;
+          font-weight: 600;
+          color: #333333; }
+        .formulario .row > div.card div#EscolherTema div.info-col div.info div.btn-wrapper button {
+          margin: auto 5px; }
