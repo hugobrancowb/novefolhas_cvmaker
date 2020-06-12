@@ -14,7 +14,6 @@ import FaleConosco from './layouts/FaleConosco'
 import Termos from './layouts/Termos'
 import Pagina404 from './layouts/Pagina404'
 import Cookies from './components/Cookies'
-import Relatorio from './layouts/Relatorio'
 import Footer from './components/Footer'
 import './assets/css/style.css'
 
@@ -71,8 +70,7 @@ class App extends React.Component {
         <Route path="/sobre" component={Sobre} />
         <Route path="/ajude-o-projeto" component={Ajude} />
         <Route path="/termos-de-uso-e-politica-de-privacidade" component={Termos} />
-        
-        <Route path="/relatorio" component={Relatorio} />
+
         <Route component={Pagina404} />
       </Switch>
       </Suspense>
