@@ -56,13 +56,13 @@ export class Home extends React.Component {
                 <div className="col-md-4 wow bounceInUp" data-wow-duration="1.4s">
                   <div className="img-wrap"><img src={ img_grid } className="img-fluid" alt=""/></div>
                     <h4>Preencha apenas os campos que você deseja exibir</h4>
-                    <p>Utilizando nosso modelo, você preenche apenas aquilo que deseja exibir em seu currículo. Basta deixar de preencher os campos que não deseja exibir em sua versão final.</p>
+                    <p>Utilizando nosso modelo, você preenche apenas aquilo que deseja exibir em seu currículo. Basta deixar em branco os campos que não deseja exibir em sua versão final.</p>
                   </div>
 
                   <div className="col-md-4 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.1s">
                     <div className="img-wrap"><img src={ img_lapis } className="img-fluid" alt=""/></div>
                     <h4>Escolha um dos nossos modelos personalizáveis</h4>
-                    <p>Os modelos disponíveis podem representar diferentes características do seu perfil. Escolha aquele que é a sua cara!</p>
+                    <p>Cada modelo disponível representa uma proposta diferente. Escolha aquele que mais combina com o seu perfil!</p>
                   </div>
 
                   <div className="col-md-4 wow bounceInUp" data-wow-duration="1.4s" data-wow-delay="0.2s">

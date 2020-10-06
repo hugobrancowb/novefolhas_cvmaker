@@ -46,6 +46,8 @@ export class Ajude extends React.Component {
 
                   <li><a href="https://hugobrancowb.github.io/" target="_blank" rel="noopener noreferrer">Hugo Branco</a> - Design dos currículos</li>
 
+                  <li><a href="https://www.linkedin.com/in/lara-ximenes-a411b1175/" target="_blank" rel="noopener noreferrer">Lara Ximenes</a> - UX Writing</li>
+
                 </p>
                 <p>Para a criação desta plataforma, utilizamos os seguintes recursos de livre uso comercial:</p>
                 <p>                  
