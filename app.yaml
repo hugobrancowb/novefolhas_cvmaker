@@ -1,9 +1,9 @@
 env: flex
 runtime: nodejs
 env_variables:
-  DB_USER: 'root'
-  DB_PASS: 'n0v3db5479'
-  DB_NAME: 'nove_dados'
+  DB_USER: ''
+  DB_PASS: ''
+  DB_NAME: ''
   CLOUD_SQL_CONNECTION_NAME: nove-folhas:southamerica-east1:novedb
   GA_MEASUREMENT_ID: UA-156504943-2
 beta_settings:
