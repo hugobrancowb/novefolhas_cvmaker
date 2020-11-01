@@ -29,11 +29,6 @@ jobs:
         run: |
           npm i
           npm run build
-      - name: Push Build to Releases
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "build/*"
-          token: ${{ secrets.TOKEN }}
       - name: SCP to Ocean
         uses: appleboy/scp-action@master
         with:
@@ -41,5 +36,4 @@ jobs:
           username: ${{ secrets.ocean_user }}
           password: ${{ secrets.ocean_pass }}
           source: "build/*"
-          strip_components: 2
-          target: "/root/nove/"
+          target: "/root/nove"
