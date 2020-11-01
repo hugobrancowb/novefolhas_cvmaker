@@ -34,3 +34,12 @@ jobs:
         with:
           artifacts: "build/*"
           token: ${{ secrets.TOKEN }}
+      - name: SCP to Ocean
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.ocean_host }}
+          username: ${{ secrets.ocean_user }}
+          password: ${{ secrets.ocean_pass }}
+          source: "build/*"
+          strip_components: 2
+          target: "/root/nove/"
