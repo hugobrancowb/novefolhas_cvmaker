@@ -1,5 +1,4 @@
 import React from 'react'
-import axios from 'axios';
 
 export class Newsletter extends React.Component {
   state = {
@@ -26,8 +25,7 @@ export class Newsletter extends React.Component {
               method="post"
               name="mc-embedded-subscribe-form"
               noValidate
-              target="_blank"
-              role="form">
+              target="_blank">
 
                 <div id="mc_embed_signup_scroll" className="form-group">
                   <div className="mc-field-group input-group">
