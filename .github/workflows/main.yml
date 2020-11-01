@@ -37,4 +37,5 @@ jobs:
           username: ${{ secrets.ocean_user }}
           password: ${{ secrets.ocean_pass }}
           source: "html/*"
-          target: "/root/teste"
+          target: "/var/www/novefolhas.studio"
+          rm: true
