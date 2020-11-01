@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { version } from '../../package.json';
 
 /* imagens */
 import img_logo_h_dark from './../assets/img/logo_h_dark.svg'
@@ -40,7 +41,7 @@ export class Footer extends React.Component {
 
         <div className="container">
           <div className="copyright">
-            &copy; Copyright <strong>Nove Folhas</strong>. All Rights Reserved
+            &copy; Copyright <strong>Nove Folhas</strong>. All Rights Reserved. v{version}.
           </div>
           <div className="credits">
             {/*
