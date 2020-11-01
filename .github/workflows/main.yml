@@ -29,11 +29,12 @@ jobs:
         run: |
           npm i
           npm run build
+          mv build html
       - name: SCP to Ocean
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.ocean_host }}
           username: ${{ secrets.ocean_user }}
           password: ${{ secrets.ocean_pass }}
-          source: "build/*"
-          target: "/root/nove"
+          source: "html/*"
+          target: "/root/teste"
