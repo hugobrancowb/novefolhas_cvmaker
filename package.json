@@ -26,18 +26,16 @@
     "react-helmet": "^6.0.0",
     "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.2",
     "routes": "^2.1.0",
     "uuid": "^7.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "webpack": "webpack --mode development",
+    "webpack": "webpack --config ./webpack.config.js --mode development",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build-css": "node-sass public/assets/css/scss/ -o public/assets/css/ && node-sass src/assets/css/scss/ -o src/assets/css/ && node-sass src/assets/cv/ -o src/assets/cv/",
-    "watch-css": "nodemon -e scss -x npm run build-css"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -55,8 +53,18 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-react": "^7.12.13",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^4.3.0",
+    "html-webpack-plugin": "^5.1.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
-    "webpack": "^4.42.0",
+    "prettier": "^2.2.1",
+    "style-loader": "^0.23.1",
+    "svg-url-loader": "^7.1.1",
+    "webpack": "^5.22.0",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.10.3"
   }

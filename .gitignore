@@ -13,6 +13,8 @@
 /CV_MODELS
 
 # misc
+/dist/*
+/public/*
 .idea
 .DS_Store
 .env.local

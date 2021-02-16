@@ -4,6 +4,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ReactGA from 'react-ga';
 
+import './assets/vendor/bootstrap/css/bootstrap.min.css';
+import './assets/vendor/animate.css/animate.min.css';
+import './assets/vendor/font-awesome/css/font-awesome.min.css';
+import './assets/vendor/ionicons/css/ionicons.min.css';
+import './assets/vendor/venobox/venobox.css';
+import './assets/vendor/owl.carousel/assets/owl.carousel.min.css';
+
 ReactGA.initialize('UA-156504943-2');
 
 ReactDOM.render(<App/>, document.getElementById('root')
