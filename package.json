@@ -31,9 +31,9 @@
     "uuid": "^7.0.2"
   },
   "scripts": {
-    "start": "node server.js",
-    "devstart": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
+    "webpack": "webpack --mode development",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build-css": "node-sass public/assets/css/scss/ -o public/assets/css/ && node-sass src/assets/css/scss/ -o src/assets/css/ && node-sass src/assets/cv/ -o src/assets/cv/",
@@ -55,6 +55,9 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.10.3"
   }
 }
