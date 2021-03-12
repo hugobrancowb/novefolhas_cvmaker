@@ -15,7 +15,7 @@
     "html2canvas": "^1.0.0-rc.5",
     "html2pdf": "0.0.11",
     "inline-css": "^2.6.3",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "mysql": "^2.18.1",
     "pretty-checkbox": "^3.0.3",
     "prop-types": "^15.7.2",
