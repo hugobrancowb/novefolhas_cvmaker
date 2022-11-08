@@ -26,7 +26,7 @@
     "react-helmet": "^6.0.0",
     "react-pdf": "^4.1.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "routes": "^2.1.0",
     "uuid": "^7.0.2"
   },
